@@ -95,6 +95,7 @@ header.navbar-container button:hover {
 /* Main */
 main {
     display: flex;    
+    flex-direction: column;
     align-items: center;
     
     width: 100%;
@@ -198,4 +199,105 @@ main .content .content-image img {
     0% {transform: translateY(0px);}
     50% {transform: translateY(-15px);}
     100% {transform: translateY(0px);}
+}
+
+/* Timeline */
+main .timeline {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+
+    position: relative;
+    margin-block: 2rem;
+
+    /* background-color: #425c77; */
+}
+.box-7 {position: absolute; top: 0%; left: 6%; animation-delay: 0s;}
+.box-8 {position: absolute; top: 15%; left: 55%; animation-delay: 0.5s;}
+.box-9 {position: absolute; top: 50%; left: 18%; animation-delay: 1s;}
+.box-10 {position: absolute; top: 25%; right: 7%; animation-delay: 1.5s;}
+
+
+main .timeline::after {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 4px;
+    left: 64%;
+    top: 0;
+    bottom: 0;
+    margin-left: -5px;
+}
+
+/* timeline-description */
+main .timeline .timeline-description {
+    flex: 2;
+    padding: 1rem;
+
+    /* background-color: rgba(0, 255, 255, 0.534); */
+}
+
+main .timeline .timeline-description h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+
+    
+    /* background-color: rgba(127, 255, 212, 0.181); */
+}
+
+main .timeline .timeline-description p {
+    font-size: 1.15rem;
+    width: 75%;
+
+    /* background-color: rgba(255, 228, 196, 0.295); */
+}
+
+/* timeline-content */
+main .timeline .timeline-content {
+    flex: 1;
+    padding: 1rem;
+
+    /* background-color: rgba(137, 43, 226, 0.287); */
+}
+
+main .timeline .timeline-content .timeline-container {
+    position: relative;    
+
+    /* background-color: rgb(255, 217, 80); */
+}
+
+main .timeline .timeline-content .timeline-container::after {
+    content: '';
+    position: absolute;
+    
+    width: 28px;
+    height: 28px;
+    left: -55px;
+    top: 5px;
+    border: 3px solid white;
+    
+    border-radius: 50%;
+    z-index: 1;
+
+    background-color: red;
+}
+
+main .timeline .timeline-content .timeline-container .timeline-list {    
+    position: relative;
+
+    /* background-color: rgb(222, 184, 135); */
+}
+
+main .timeline .timeline-content .timeline-container .timeline-list h2 {
+    font-weight: 400;
+    color: red;
+    margin-bottom: 0;
+
+    /* background-color: rgba(205, 155, 90, 0.52); */
+}
+
+main .timeline .timeline-content .timeline-container .timeline-list p {
+    font-weight: 500;
+
+    /* background-color: rgba(210, 105, 30, 0.274); */
 }
