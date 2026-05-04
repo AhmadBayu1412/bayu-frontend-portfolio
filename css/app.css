@@ -356,3 +356,75 @@ main .game .game-content p .fr-draggable {
     height: 600px;
     width: 1000px;
 }
+
+/* Profile */
+main .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 3;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+
+    /* background-color: red; */
+
+}
+
+main .profile .profile-img {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+main .profile .profile-img img {
+    /* width: 100%; */
+    width: 300px;
+    max-width: auto;
+    border-radius: 999px;
+    /* border: 5px solid #425c77; */
+
+    background-color: red;
+}
+
+main .profile .profile-description {
+    flex: 2;
+    margin-left: 2rem;
+}
+
+main .profile .profile-description h1 {
+    font-size: 3rem;
+    margin-block: 0;
+}
+
+main .profile .profile-description h2 {
+    margin-block: 0;
+}
+
+main .profile .profile-description p {
+    font-size: 1.2rem;
+}
+
+main .profile .profile-description button {
+    padding: 0.6rem 2.2rem;
+    border: 3px solid transparent;
+    margin-block-start: 0;
+
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 999px;
+    
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
