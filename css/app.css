@@ -79,7 +79,7 @@ header.navbar-container .nav-list ul li a {
 
 header.navbar-container .nav-list ul li a:hover {
     border-radius: 999px;
-    background-color: #425c77;
+    background-color: #131c2e;
     color: white;
 }
 
@@ -133,6 +133,7 @@ main .content .content-description {
     text-align: center;
     padding: 1rem 2rem;
     
+    color: #425c77;
     bottom: 0;
     left: 0;
     right: 0;
@@ -142,6 +143,8 @@ main .content .content-description {
 main .content .content-description p:nth-child(3) {
     font-size: 1.3rem;
     font-weight: 600;
+
+    color: #131c2e;
 }
 
 /* Content Image */
@@ -157,7 +160,7 @@ main .content .content-image::after{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 50px;
+    bottom: 0;
     width: 100%;
     height: 50%;
     background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
@@ -165,7 +168,7 @@ main .content .content-image::after{
 }
 
 main .content .content-image .overlay-title {
-    padding: 0 2rem 1rem;
+    padding: 0 1rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -198,6 +201,7 @@ main .content .content-image img {
     /* position: absolute; */
     width: 40px;
     height: 40px;
+    border-radius: 10%;
     background: linear-gradient(to top, transparent, rgba(255, 0, 0, 0.936));
     animation: float 3s ease-in-out infinite;
 }
@@ -228,12 +232,12 @@ main .timeline {
 
     /* background-color: #425c77; */
 }
-.box-7 {position: absolute; top: 2%; left: 30%; animation-delay: 0s;}
-.box-8 {position: absolute; top: 30%; left: 50%; animation-delay: 0.5s;}
+.box-7 {position: absolute; top: 0%; left: 30%; animation-delay: 0s;}
+.box-8 {position: absolute; top: 25%; left: 50%; animation-delay: 0.5s;}
 .box-9 {position: absolute; top: 50%; left: 18%; animation-delay: 1s;}
-.box-10 {position: absolute; top: 25%; right: 7%; animation-delay: 1.5s;}
+.box-10 {position: absolute; top: 20%; right: 7%; animation-delay: 1.5s;}
 .box-11 {position: absolute; top: 80%; left: 8%; animation-delay: 1s;}
-.box-12 {position: absolute; top: 60%; left: 25%; animation-delay: 1s;}
+/* .box-12 {position: absolute; top: 60%; left: 25%; animation-delay: 1s;} */
 
 
 main .timeline::after {
@@ -259,7 +263,7 @@ main .timeline .timeline-description h2 {
     font-weight: 500;
     font-size: 1.9rem;
 
-    
+    color: #131c2e;
     /* background-color: rgba(127, 255, 212, 0.181); */
 }
 
@@ -267,6 +271,7 @@ main .timeline .timeline-description p {
     font-size: 1.2rem;
     width: 75%;
 
+    color: #425c77;
     /* background-color: rgba(255, 228, 196, 0.295); */
 }
 
@@ -320,6 +325,8 @@ main .timeline .timeline-content .timeline-container .timeline-list p {
     font-weight: 400;
     font-size: 1.2rem;
 
+    color: #425c77;
+
     /* background-color: rgba(210, 105, 30, 0.274); */
 }
 
@@ -341,7 +348,10 @@ main .game .game-description {
 
 main .game .game-description h2{
     font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 0;
+
+    color: #131c2e;
 
     /* background-color: aliceblue; */
 }
@@ -351,6 +361,7 @@ main .game .game-description p {
     margin-block: 0.5rem 0;
 
     /* background-color: aliceblue; */
+    color: #425c77;
 }
 
 main .game .game-content {
@@ -381,6 +392,7 @@ main .profile {
     justify-content: center;
 
     flex: 3;
+    position: relative;
 
     width: 100%;
     max-width: 1200px;
@@ -388,7 +400,7 @@ main .profile {
     padding: 8rem 1rem;
 
     /* background-color: red; */
-    z-index: 0;
+    /* z-index: 0; */
 
 }
 
@@ -421,16 +433,22 @@ main .profile .profile-description {
 
 main .profile .profile-description h1 {
     font-size: 3rem;
-    margin-block: 10px;
+    margin-block: 10px 5px;
+
+    color: #131c2e;
 }
 
 main .profile .profile-description h2 {
-    margin-block: 20px;
+    margin-block: 0 25px;
+
+    color: #131c2e;
 }
 
 main .profile .profile-description p {
     font-size: 1.2rem;
     margin-block: 20px 40px;
+
+    color: #425c77;
 }
 
 main .profile .profile-description button {
@@ -449,13 +467,25 @@ main .profile .profile-description button {
     transition: all 0.15s ease-in;
 }
 
+main .profile .profile-description button:hover {
+    font-weight: 600;
+    border: 3px solid #425c77;
+    color: black;
+    background-color: white;
+}
+
+.box-13 {position: absolute; bottom: 10%; left: 4%; animation-delay: 0s;}
+.box-14 {position: absolute; top: 5%; left: 55%; animation-delay: 0.5s;}
+.box-15 {position: absolute; top: 17%; left: 25%; animation-delay: 1s;}
+.box-16 {position: absolute; bottom: 20%; right: 10%; animation-delay: 1s;}
+
 /* Footer */
 footer {
     padding: 30px;
     text-align: center;
     color: white;
 
-    background-color: #425c77;
+    background-color: #131c2e;
 }
 
 footer p:nth-child(1) {
@@ -474,9 +504,17 @@ footer p:nth-child(2) span {
 main aside {
     position: fixed;
     inset-block: 0;
-    inset-inline-end: 0;
+    /* inset-inline-end: 0; */
+    right: 0;
+    height: 100%;
 
+    transform: translateX(100%);
+    transition: 0.3s ease;
     /* background-color: #425c77; */
+}
+
+main aside.active {
+    transform: translateX(0);
 }
 
 main aside .social-media {
@@ -491,7 +529,7 @@ main aside .social-media ul {
     justify-content: center;
     gap: 1.5rem;
 
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem 1rem 1rem;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     margin: auto;
