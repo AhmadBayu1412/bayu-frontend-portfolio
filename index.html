@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pijac Dicoding Landing Page</title>
+    <title>My Profile</title>
 
     <!-- My Own Style -->
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="css/app.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
 <body>
     <header class="navbar-container">
         <div class="logo">
-            <img src="/img/logo-coding.png" alt="pijak logo">
+            <img src="img/logo.png" alt="logo">
         </div>
 
         <nav class="nav-list">
@@ -35,6 +35,7 @@
                 <li><a href="#timeline">Timeline</a></li>
                 <li><a href="#game">Game</a></li>
                 <li><a href="#profile">Profile</a></li>
+                <li><a href="https://www.dicoding.com/users/ahmadbayusamudera" target="_blank">Dicoding</a></li>
             </ul>
         </nav>
 
@@ -42,9 +43,9 @@
     </header>
 
     <main>
-        <div id="content" class="content">
-            <div class="content-image">
-                <img src="/img/thumbnail.png" alt="Thumbnail Pijak">
+        <section id="content" class="content">
+            <article class="content-image">
+                <img src="img/thumbnail.png" alt="thumbnail">
 
                 <!-- Decoration floating box -->
                 <div class="floating-box box-1"></div>
@@ -57,9 +58,9 @@
                 <div class="overlay-title">
                     <h1 class="highlight">Learning every day, building meaningful digital experiences.</h1>
                 </div>
-            </div>
+            </article>
 
-            <div class="content-description">
+            <article class="content-description">
                 <p>I believe that being a developer is not about being perfect right away — it's about continuously
                     moving forward. Every line of code I write is part of an ongoing learning journey.
                 </p>
@@ -67,10 +68,10 @@
                     what I build. That's why I keep learning — from HTML to React, from frontend to fullstack.</p>
                 <p><span class="highlight">Progress, not perfection</span>— that's the principle that drives me every
                     day.</p>
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div id="timeline" class="timeline">
+        <section id="timeline" class="timeline">
             <!-- Decoration floating box -->
             <div class="floating-box box-7"></div>
             <div class="floating-box box-8"></div>
@@ -79,13 +80,13 @@
             <div class="floating-box box-11"></div>
             <!-- <div class="floating-box box-12"></div> -->
 
-            <div class="timeline-description">
+            <article class="timeline-description">
                 <h2><span class="highlight">Timeline</span> My Journey</h2>
                 <p>It hasn't been a smooth journey, but every step has taught me something. These are real milestones in
                     my learning process as a developer.</p>
-            </div>
+            </article>
 
-            <div class="timeline-content">
+            <article class="timeline-content">
                 <div class="timeline-container">
                     <div class="timeline-list">
                         <h2>Discovering the Web World</h2>
@@ -113,62 +114,63 @@
                         <p>Node.js opened new doors — now I can build applications from end to end on my own.</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div id="game" class="game">
-            <div class="game-description">
+        <section id="game" class="game">
+            <article class="game-description">
                 <h2><span class="highlight">Maze Game</span> for You</h2>
                 <p>A good developer knows when to take a break. Let's play!</p>
-            </div>
+            </article>
             <div class="game-content">
                 <p>
                     <iframe src="https://stackblitz.com/edit/vitejs-vite-8pudnvap?embed=1&file=index.html&view=preview"
                         title="Dicoding Sandpack" class="fr-draggable" allow="fullscreen"></iframe>
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div id="profile" class="profile">
+        <section id="social-media" class="social-media">
+            <ul>
+                <li><a href="https://github.com/AhmadBayu1412" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/ahmad-bayu-samudera-985880236/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a></li>
+                <li><a href="https://www.instagram.com/detective.20.03.2003/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li><a href="https://www.facebook.com/ahmadbayu.samudra.3" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+            </ul>
+        </section>
+
+        <section id="profile" class="profile">
             <!-- Decoration floating box -->
             <div class="floating-box box-13"></div>
             <div class="floating-box box-14"></div>
             <div class="floating-box box-15"></div>
             <div class="floating-box box-16"></div>
 
-            <div class="profile-img">
-                <img src="/img/profile-image.png" alt="profile bayu">
-            </div>
+            <aside>
+                <div class="profile-img">
+                    <img src="img/profile.png" alt="profile">
+                </div>
+            </aside>
 
-            <div class="profile-description">
-                <h1>HI! I'M <span class="highlight">Bayu</span></h1>
-                <h2>I AM A <span class="highlight">Frontend Developer</span></h2>
+            <article class="profile-description">
+                <h2>HI! I'M <span class="highlight">Bayu</span></h2>
+                <h3>I AM A <span class="highlight">FRONTEND DEVELOPER</span></h3>
                 <p>I am an aspiring Front-End Developer with a strong passion for building modern and responsive
                     websites. I enjoy turning ideas into engaging visual interfaces while ensuring every detail
                     contributes to a seamless user experience.</p>
                 <button class="my-contact">Contact Me</button>
-            </div>
+            </article>
+        </section>
 
-        </div>
 
-        <aside>
-            <div id="social-media" class="social-media active">
-                <ul>
-                    <li><a href="https://github.com/AhmadBayu1412" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a></li>
-                    <li><a href="https://www.linkedin.com/in/ahmad-bayu-samudera-985880236/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a></li>
-                    <li><a href="https://www.instagram.com/detective.20.03.2003/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a></li>
-                    <li><a href="https://www.facebook.com/ahmadbayu.samudra.3" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a></li>
-                </ul>
-            </div>
-        </aside>
     </main>
 
     <footer>

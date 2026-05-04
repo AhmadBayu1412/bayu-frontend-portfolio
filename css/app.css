@@ -404,7 +404,7 @@ main .profile {
 
 }
 
-main .profile .profile-img {
+main .profile aside .profile-img {
     display: flex;
     height: 500px;
     justify-content: center;
@@ -415,7 +415,7 @@ main .profile .profile-img {
     background-color: white;
 }
 
-main .profile .profile-img img {
+main .profile aside .profile-img img {
     /* width: 100%; */
     width: 400px;
     max-width: auto;
@@ -431,21 +431,21 @@ main .profile .profile-description {
     max-width: 700px;
 }
 
-main .profile .profile-description h1 {
+main .profile .profile-description h2 {
     font-size: 3rem;
     margin-block: 10px 5px;
 
     color: #131c2e;
 }
 
-main .profile .profile-description h2 {
+main .profile .profile-description h3 {
     margin-block: 0 25px;
 
     color: #131c2e;
 }
 
 main .profile .profile-description p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-block: 20px 40px;
 
     color: #425c77;
@@ -500,29 +500,27 @@ footer p:nth-child(2) span {
     font-weight: bold;
 }
 
-/* Aside: Media-Social */
-main aside {
+/* Media-Social */
+main .social-media {
+    height: 100%;
+    display: flex;
+    
     position: fixed;
     inset-block: 0;
     /* inset-inline-end: 0; */
     right: 0;
     height: 100%;
-
+    
     transform: translateX(100%);
     transition: 0.3s ease;
     /* background-color: #425c77; */
 }
 
-main aside.active {
+main .social-media.active {
     transform: translateX(0);
 }
 
-main aside .social-media {
-    height: 100%;
-    display: flex;
-}
-
-main aside .social-media ul {
+main .social-media ul {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -537,11 +535,11 @@ main aside .social-media ul {
     background-color: #425c77;
 }
 
-main aside .social-media ul li {
+main .social-media ul li {
     list-style-type: none;
 }
 
-main aside .social-media li a  {
+main .social-media li a  {
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
