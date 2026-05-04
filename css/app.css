@@ -212,10 +212,12 @@ main .timeline {
 
     /* background-color: #425c77; */
 }
-.box-7 {position: absolute; top: 0%; left: 6%; animation-delay: 0s;}
-.box-8 {position: absolute; top: 15%; left: 55%; animation-delay: 0.5s;}
+.box-7 {position: absolute; top: 2%; left: 30%; animation-delay: 0s;}
+.box-8 {position: absolute; top: 30%; left: 50%; animation-delay: 0.5s;}
 .box-9 {position: absolute; top: 50%; left: 18%; animation-delay: 1s;}
 .box-10 {position: absolute; top: 25%; right: 7%; animation-delay: 1.5s;}
+.box-11 {position: absolute; top: 80%; left: 8%; animation-delay: 1s;}
+.box-12 {position: absolute; top: 60%; left: 25%; animation-delay: 1s;}
 
 
 main .timeline::after {
@@ -239,14 +241,14 @@ main .timeline .timeline-description {
 
 main .timeline .timeline-description h2 {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 
     
     /* background-color: rgba(127, 255, 212, 0.181); */
 }
 
 main .timeline .timeline-description p {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     width: 75%;
 
     /* background-color: rgba(255, 228, 196, 0.295); */
@@ -262,6 +264,7 @@ main .timeline .timeline-content {
 
 main .timeline .timeline-content .timeline-container {
     position: relative;    
+    margin-bottom: 5rem;
 
     /* background-color: rgb(255, 217, 80); */
 }
@@ -290,6 +293,7 @@ main .timeline .timeline-content .timeline-container .timeline-list {
 
 main .timeline .timeline-content .timeline-container .timeline-list h2 {
     font-weight: 400;
+    font-size: 1.7rem;
     color: red;
     margin-bottom: 0;
 
@@ -297,7 +301,58 @@ main .timeline .timeline-content .timeline-container .timeline-list h2 {
 }
 
 main .timeline .timeline-content .timeline-container .timeline-list p {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.2rem;
 
     /* background-color: rgba(210, 105, 30, 0.274); */
+}
+
+/* Game */
+main .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* background-color: #425c77; */
+}
+
+main .game .game-description {
+    text-align: center;
+
+    /* background-color: antiquewhite; */
+}
+
+main .game .game-description h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+
+    /* background-color: aliceblue; */
+}
+
+main .game .game-description p {
+    font-size: 1.2rem;
+    margin-block: 0.5rem 0;
+
+    /* background-color: aliceblue; */
+}
+
+main .game .game-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+
+    position: relative;
+    margin-block: 2rem;
+
+    /* background-color: #425c77; */
+}
+
+main .game .game-content p {
+    display: flex;
+    width: 100%;
+}
+
+main .game .game-content p .fr-draggable {
+    height: 600px;
+    width: 1000px;
 }
