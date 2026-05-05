@@ -17,10 +17,6 @@ body {
 }
 
 /* Navbar */
-header {
-    display: inline;
-}
-
 header.navbar-container {
     display: flex;
     justify-content: space-between;
@@ -37,7 +33,7 @@ header.navbar-container {
     
     background-color: white;
     box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.15);
-    z-index: 999999;
+    z-index: 100;
 
     /* background-color: gray;  */
 }
@@ -134,9 +130,6 @@ main .content .content-description {
     padding: 1rem 2rem;
     
     color: #425c77;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
 }
 
@@ -198,7 +191,7 @@ main .content .content-image img {
 
 /* Floating Box */
 .floating-box {
-    /* position: absolute; */
+    position: absolute;
     width: 40px;
     height: 40px;
     border-radius: 10%;
@@ -206,12 +199,12 @@ main .content .content-image img {
     animation: float 3s ease-in-out infinite;
 }
 
-.box-1 {position: absolute; top: 13%; left: 25%; animation-delay: 0s;}
-.box-2 {position: absolute; top: 8%; left: 55%; animation-delay: 0.5s;}
-.box-3 {position: absolute; top: 40%; left: 18%; animation-delay: 1s;}
-.box-4 {position: absolute; top: 20%; right: 25%; animation-delay: 1.5s;}
-.box-5 {position: absolute; top: 50%; right: 15%; animation-delay: 0.5s;}
-.box-6 {position: absolute; top: 35%; left: 44%; animation-delay: 0s; z-index: -1;}
+.box-1 {top: 13%; left: 25%; animation-delay: 0s;}
+.box-2 {top: 8%; left: 55%; animation-delay: 0.5s;}
+.box-3 {top: 40%; left: 18%; animation-delay: 1s; z-index: -1;}
+.box-4 {top: 20%; right: 25%; animation-delay: 1.5s; z-index: -1;}
+.box-5 {top: 50%; right: 15%; animation-delay: 0.5s; z-index: -1;}
+.box-6 {top: 25%; left: 46%; animation-delay: 0s; z-index: -1;}
 
 @keyframes float {
     0% {transform: translateY(0px);}
@@ -232,12 +225,12 @@ main .timeline {
 
     /* background-color: #425c77; */
 }
-.box-7 {position: absolute; top: 0%; left: 30%; animation-delay: 0s;}
-.box-8 {position: absolute; top: 25%; left: 50%; animation-delay: 0.5s;}
-.box-9 {position: absolute; top: 50%; left: 18%; animation-delay: 1s;}
-.box-10 {position: absolute; top: 20%; right: 7%; animation-delay: 1.5s;}
-.box-11 {position: absolute; top: 80%; left: 8%; animation-delay: 1s;}
-/* .box-12 {position: absolute; top: 60%; left: 25%; animation-delay: 1s;} */
+.box-7 {top: 0%; left: 30%; animation-delay: 0s;}
+.box-8 {top: 25%; left: 50%; animation-delay: 0.5s;}
+.box-9 {top: 50%; left: 18%; animation-delay: 1s;}
+.box-10 {top: 22%; right: 7%; animation-delay: 1.5s;}
+.box-11 {top: 80%; left: 8%; animation-delay: 1s;}
+/* .box-12 {top: 60%; left: 25%; animation-delay: 1s;} */
 
 
 main .timeline::after {
@@ -418,7 +411,7 @@ main .profile aside .profile-img {
 main .profile aside .profile-img img {
     /* width: 100%; */
     width: 400px;
-    max-width: auto;
+    max-width: 100%;
     border-radius: 999px;
     /* border: 5px solid #425c77; */
 
@@ -474,10 +467,10 @@ main .profile .profile-description button:hover {
     background-color: white;
 }
 
-.box-13 {position: absolute; bottom: 10%; left: 4%; animation-delay: 0s;}
-.box-14 {position: absolute; top: 5%; left: 55%; animation-delay: 0.5s;}
-.box-15 {position: absolute; top: 17%; left: 25%; animation-delay: 1s;}
-.box-16 {position: absolute; bottom: 20%; right: 10%; animation-delay: 1s;}
+.box-13 {bottom: 10%; left: 4%; animation-delay: 0s;}
+.box-14 {top: 5%; left: 55%; animation-delay: 0.5s;}
+.box-15 {top: 17%; left: 25%; animation-delay: 1s;}
+.box-16 {bottom: 20%; right: 10%; animation-delay: 1s;}
 
 /* Footer */
 footer {
@@ -502,12 +495,10 @@ footer p:nth-child(2) span {
 
 /* Media-Social */
 main .social-media {
-    height: 100%;
     display: flex;
     
     position: fixed;
     inset-block: 0;
-    /* inset-inline-end: 0; */
     right: 0;
     height: 100%;
     
@@ -545,4 +536,281 @@ main .social-media li a  {
     color: white;
 
     transition: all 0.1s ease-in-out;
+}
+
+/* Responsive Design */
+/* Tablet: 1024px */
+@media (max-width: 1024px) {
+    main {
+        padding: 0 2rem;
+    }
+
+    main .content .content-image img {
+        height: 450px;
+    }
+
+    main .content .content-image .overlay-title h1 {
+        font-size: 2.2rem;
+    }
+
+
+    main .timeline::after {
+        left: 58%;
+    }
+
+    main .timeline .timeline-description h2 {
+    font-size: 1.9rem;
+    }
+
+    main .timeline .timeline-description {
+        flex: 1.95;
+    }
+
+    main .timeline .timeline-description p {
+        font-size: 1.1rem;
+    }
+
+    main .timeline .timeline-description h2 {
+        font-size: 1.8rem;
+    }
+
+    main .timeline .timeline-content .timeline-container::after {
+        left: -95px;
+    }
+
+    main .timeline .timeline-content .timeline-container .timeline-list h2 {
+    font-size: 1.5rem;
+    }
+
+    main .timeline .timeline-content .timeline-container .timeline-list p {
+    font-size: 1rem;
+    }
+
+    main .game .game-description h2 {
+        font-size: 1.8rem;
+    }
+
+    main .game .game-description p {
+        font-size: 1.1rem;
+    }
+
+    main .game .game-content p .fr-draggable {
+        width: 100%;
+    }
+    
+
+    main .profile aside .profile-img img {
+        width: 300px;
+    }
+
+    main .profile .profile-description {
+        margin-left: 2rem;
+    }
+
+    main .profile .profile-description h2 {
+        font-size: 2.5rem;
+    }
+
+    main .profile .profile-description h3 {
+        font-size: 1.1rem;
+    }    
+}
+
+/* Mobile (768px) */
+@media (max-width: 758px) {
+    header.navbar-container {
+        padding: 0.5rem 1rem;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        justify-content: space-between;
+    }
+
+    header.navbar-container button.my-contact{
+        display: none;
+    }
+
+    header.navbar-container div.logo img {
+        width: 140px;
+    }
+
+    header.navbar-container .nav-list ul {
+        gap: 0rem 0.1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        margin-block: 0.2rem;
+    }
+
+    header.navbar-container .nav-list ul li a {
+        font-size: 0.78rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    
+    main {
+        padding: 0 1rem;
+    }
+
+    main .content .content-image img  {
+        /* width: 80%; */
+        height: 260px;
+        object-position: center top;
+    }
+
+    main .content .content-image .overlay-title h1 {
+        font-size: 1.7rem;
+    }
+
+    main .content .content-description {
+        padding: 0.5rem;
+    }
+
+    main .content .content-description p {
+        font-size: 0.9rem;
+    }
+
+    main .content .content-description p:nth-child(3){
+        font-size: 1rem;
+    }
+
+
+    .box-1, .box-4, .box-6,
+    .box-8, .box-9, .box-11,
+    .box-7, .box-10, 
+    .box-14, .box-16  {
+        display: none;
+    }
+
+
+    main .timeline {
+        flex-direction: column;
+        margin-block: 1rem;
+    }
+
+    main .timeline::after {
+        display: none;
+    }
+    
+    main .timeline .timeline-description {
+        padding: 0.5rem;
+    }
+    
+    main .timeline .timeline-description h2 {
+        font-size: 1.5rem;
+    }
+
+    main .timeline .timeline-description p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    main .timeline .timeline-content {
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+        border-left: 4px solid red;
+        margin-left: 1rem;
+    }
+
+    main .timeline .timeline-content .timeline-container {
+        margin-bottom: 2rem;
+    }
+    
+    main .timeline .timeline-content .timeline-container::after {
+        left: -2.7rem;
+        width: 20px;
+        height: 20px;
+        top: 4px;
+    }
+
+    main .timeline .timeline-content .timeline-container .timeline-list h2 {
+        font-size: 1.2rem;
+    }
+
+    main .timeline .timeline-content .timeline-container .timeline-list p {
+        font-size: 1rem;
+    }
+
+
+    main .game .game-description h2 {
+        font-size: 1.5rem;
+    }
+
+    main .game .game-description p {
+        font-size: 1rem;
+    }
+
+    main .game .game-content {
+        width: 100%;
+    }
+
+    main .game .game-content p {
+        width: 100%;
+    }
+
+    main .game .game-content p.fr-draggable {
+        width: 100%;
+        height: 450px;
+    }
+
+    main .profile {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    main .profile aside .profile-img {
+        height: auto;
+        border: none;
+        background-color: transparent;
+    }
+
+    main .profile aside .profile-img img {
+        width: 220px;
+    }
+
+    main .profile .profile-description {
+        margin-left: 0;
+        text-align: center;
+        max-width: 100%;    
+    }
+
+    main .profile .profile-description h2 {
+        font-size: 2rem;
+    }
+
+    main .profile .profile-description h3 {
+        font-size: 1rem;
+    }
+
+    main .profile .profile-description p {
+        font-size: 1rem;
+        margin-block: 10px 20px;
+    }
+
+    footer {
+        padding: 20px 15px;
+    }
+}
+
+/* Mobile: 480px */
+@media (max-width: 480px) {
+    header.navbar-container {
+        justify-content: center;
+    }
+
+    main .content .content-image img { 
+        height: 200px;
+    }
+
+    main .content .content-image .overlay-title h1 {
+        font-size: 1.1rem;
+    }
+
+    main .profile aside .profile-img img {
+        width: 180px;
+    }
+
+    main .profile .profile-description h2 {
+        font-size: 1.7rem;
+    }
 }
