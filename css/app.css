@@ -614,6 +614,11 @@ main .social-media li a  {
     main .profile .profile-description h3 {
         font-size: 1.1rem;
     }    
+
+    .floating-box {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* Mobile (768px) */
@@ -679,6 +684,11 @@ main .social-media li a  {
     .box-7, .box-10, 
     .box-14, .box-16  {
         display: none;
+    }
+
+    .floating-box {
+        width: 30px;
+        height: 30px;
     }
 
 
@@ -812,5 +822,10 @@ main .social-media li a  {
 
     main .profile .profile-description h2 {
         font-size: 1.7rem;
+    }
+
+    .floating-box {
+        width: 25px;
+        height: 25px;
     }
 }
