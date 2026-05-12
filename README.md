@@ -4,6 +4,8 @@
 
 A personal portfolio website built from scratch using pure **HTML**, **CSS**, and **JavaScript** — no frameworks, no shortcuts. Just fundamentals done right.
 
+<img width="1894" height="928" alt="bayu-profile" src="https://github.com/user-attachments/assets/ebfae2c2-2c01-4418-855d-6d5ac14688fd" />
+
 ---
 
 ## 🚀 What's Inside
